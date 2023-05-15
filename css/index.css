@@ -1,15 +1,13 @@
+body{
+    background-image: url("https://images.indianexpress.com/2021/12/Kratos-facts-featured.jpg");
+    background-size: cover;
+}
 p{
     text-align: center;
     color: aliceblue;
 }
 h1, .link{
     margin-left: 30px;
-}
-
-body{
-    background-image: url("https://images.indianexpress.com/2021/12/Kratos-facts-featured.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 .add-button{
     background-color: rgb(71, 145, 255);
@@ -18,7 +16,7 @@ body{
     width: 150px;
     height: 29px;
     font-size: large;
-    transition: box-shadow 0.15s;
+    transition: 0.15s;
     margin-left: 30px;
     /*vertical-align: top;  this code is used to place the text on line with each other*/
 }
