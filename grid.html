@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Grid Practice</title>
 </head>
-<body>
+<body style="padding-bottom: 1000px;">
     
    <!--  1. The first step is to creat a display as follows below:
          2. We need to set how many columns our Grid has, which is given to this property two values: 100px and 100px, these values define how wide our Grid Columns are. Then our Grid will have two Columns. -->
@@ -20,13 +20,52 @@
     </div>
 
     <div style="  
-    margin-top: 30px;              
+        margin-top: 30px;              
         display: grid; 
         grid-template-columns: 100px 100px 200px;">
         <div style="background-color: lightblue;">100px</div>
         <div style="background-color: lightpink;">100px <p>Text</p></div>
         <div style="background-color: lightblue;">200px</div>
         <div style="background-color: lightpink;">100px</div>  <!--  This fourth Div wraps around to a second row because the "grid-template-column" is set to just three columns (100px 100px 200px): the more elements are added, the more Rows are created for each element below. These are the Basic sof how the Grids work. -->
-    </div> <br>
+    </div>
+
+    <div style="  
+        margin-top: 30px;              
+        display: grid; 
+        grid-template-columns: 100px 1fr;">
+        <div style="background-color: lightblue;">100px</div>
+        <div style="background-color: lightpink;">1fr</div>
+    </div>
+
+    <div style="  
+        margin-top: 30px;              
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 10px;">
+        <div style="background-color: lightblue;">100px</div>
+        <div style="background-color: lightpink;">1fr</div>
+        <div style="background-color: lightblue;">2fr</div>
+        <div style="background-color: lightblue;">2fr</div>
+        <div style="background-color: lightblue;">2fr</div>
+        <div style="background-color: lightblue;">2fr</div>
+        <div style="background-color: lightblue;">2fr</div>
+        <div style="background-color: lightblue;">2fr</div>
+    </div>
+
+    <div style="  
+        margin-top: 30px;              
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 40px;">
+        <div style="background-color: lightblue; height: 200px;">1fr</div>
+        <div style="background-color: lightpink; height: 200px;">1fr</div>
+        <div style="background-color: lightblue; height: 200px;">1fr</div>
+        <div style="background-color: lightpink; height: 200px;">1fr</div>
+        <div style="background-color: lightblue; height: 200px;">1fr</div>
+        <div style="background-color: lightpink; height: 200px;">1fr</div>
+    </div>  
+    
 </body>
 </html>

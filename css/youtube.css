@@ -1,11 +1,10 @@
 p{
-    font-family: Roboto, arial;  /* This syntax with a comma is called a "font stack", where it sets up a back-up font, in case the "Roboto" font fails to load from Google, then it will fall back to a back-up font which is the "Arial" font. */ 
+   font-family: Roboto, arial;  /* This syntax with a comma is called a "font stack", where it sets up a back-up font, in case the "Roboto" font fails to load from Google, then it will fall back to a back-up font which is the "Arial" font. */ 
     margin-top: 0;
     margin-bottom: 0;
 }
 .thumbnail-1{ 
-    width: 300px;
-    display: block;
+    width: 100%;
 }
 .search-bar{
     display: block;
@@ -20,22 +19,9 @@ p{
 /* Lesson 9 
 div Element = division = just a box.  By default, the div is a block element */
 
-.video-preview{
-    display: inline-block;
-    width: 300px;
-    vertical-align: top;  /* This code is used to align elements on the same line where they are on */
-    margin-right: 15px;
-}
-.channel-picture{
-    display: inline-block;
-    width: 50px;    /*  it shares the same "width" as for the "profile-picture" does too, because the "channel-picture" container has a width of 50px, so the "profile-picture" has to have the same dimesions, so the image can fit in properly  */
-    vertical-align: top;
-    background-color: gray;
-}
-.video-info{
-    display: inline-block;
-    width: 245px;
-    background-color: gray;
+.video-info-grid{
+    display: grid;
+    grid-template-columns: 50px 1fr;
 }
 .profile-picture{
     width: 40px;    /*  "width: 100%;" This is a better way to give a " width" to the image instead of "width:50px", because the image will take up the entire space of its container. 
@@ -51,4 +37,10 @@ div Element = division = just a box.  By default, the div is a block element */
 }
 .video-author{
     margin-bottom: 4px;
+}
+.video-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
 }
